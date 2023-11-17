@@ -1,0 +1,84 @@
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Style for labels */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style for inputs */
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Style for submit button */
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Change button color on hover */
+button:hover {
+    background-color: #60a7f4;
+}
+
+/* Styles for the container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+
+/* Style for the search input */
+.container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Gradient background */
+.gradient-bg {
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+}
+
+/* Style for Account Creation section */
+.account-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles within Account Creation section */
+.account-section button {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+/* Style for User Details section */
+.user-details-section {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
