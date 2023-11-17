@@ -4,6 +4,7 @@ import AccountCreationTab from "./components/AccountCreationTab";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
+const baseurl = "https://user-info-dashboard.onrender.com";
 
 function App() {
   const [currentTab, setCurrentTab] = useState("userDetails");
@@ -15,7 +16,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/users");
+      const response = await fetch(`${baseurl}/api/users`);
       const data = await response.json();
       setUsers(data);
     } catch (error) {

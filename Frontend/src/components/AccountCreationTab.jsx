@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./AccountCreationTab.css";
 import axios from "axios";
-
+const baseurl = "https://user-info-dashboard.onrender.com";
 const AccountCreationTab = (props) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -12,15 +12,12 @@ const AccountCreationTab = (props) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(
-        "http://localhost:5000/api/users/create",
-        {
-          username,
-          password,
-          phoneNumber,
-          email: emailID,
-        }
-      );
+      const response = await axios.post(`${baseurl}/api/users/create`, {
+        username,
+        password,
+        phoneNumber,
+        email: emailID,
+      });
 
       props.onCreate((prevState) => prevState + 1);
       props.notifySuccess();
